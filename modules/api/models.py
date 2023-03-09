@@ -104,7 +104,7 @@ StableDiffusionTxt2ImgProcessingAPI = PydanticModelGenerator(
         {"key": "sampler_index", "type": str, "default": "Euler"},
         {"key": "script_name", "type": str, "default": None},
         {"key": "script_args", "type": list, "default": []},
-        {"key": "do_not_send", "type": bool, "default": True},
+        {"key": "do_not_send", "type": bool, "default": False},
         {"key": "do_not_save", "type": bool, "default": False}
     ]).generate_model()
 
@@ -119,7 +119,7 @@ StableDiffusionImg2ImgProcessingAPI = PydanticModelGenerator(
         {"key": "include_init_images", "type": bool, "default": False, "exclude" : True},
         {"key": "script_name", "type": str, "default": None},
         {"key": "script_args", "type": list, "default": []},
-        {"key": "do_not_send", "type": bool, "default": True},
+        {"key": "do_not_send", "type": bool, "default": False},
         {"key": "do_not_save", "type": bool, "default": False}
     ]).generate_model()
 
